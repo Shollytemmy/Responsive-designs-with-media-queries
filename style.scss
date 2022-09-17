@@ -2,12 +2,14 @@ $color-1 : #cdb4db; // Mobile
 $color-2 : #fff1e6; // Tablet
 $color-3 : #52b788; // Laptop
 $color-4 : #bee1e6; // Desktop
+$color-5: teal;
 
 
 $mobile : 576px;
 $tablet : 768px;
 $laptop : 992px;
 $desktop : 1200px;
+$extraScreen: 1400px;
 
 
 *{
@@ -22,7 +24,6 @@ body{
 }
 
 .container{
-    border: 1px solid red;
     height: 100vh;
     display: grid;
     place-content: center;
@@ -36,9 +37,43 @@ body{
 }
 
 
+@media screen and(max-width: $extraScreen) {
 
-@media screen and (max-width: 500px) {
-    .container{
-        background-color: teal;
+    // 1400px
+    .container {
+        background-color: $color-5;
     }
+
+}
+
+@media screen and(max-width: $desktop) { //1200px
+    .container{
+        background-color: $color-4;
+    }
+    
+}
+
+@media screen and (max-width: $laptop) { //992px
+    .container{
+        background:$color-3;
+    }
+    
+}
+
+
+@media screen and (max-width: $tablet) { //768px
+    .container{
+        background-color: red;
+    }
+         #size {
+             font-size: 35px;
+         }
+}
+
+@media screen and (max-width: $mobile) { //576px
+    .container{
+        background: $color-1;
+    }
+   
+    
 }

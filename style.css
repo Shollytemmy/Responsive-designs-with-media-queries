@@ -10,7 +10,6 @@ body {
 }
 
 .container {
-  border: 1px solid red;
   height: 100vh;
   display: grid;
   place-content: center;
@@ -23,8 +22,31 @@ body {
   transform: translateX(-50%);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1400px) {
   .container {
     background-color: teal;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    background-color: #bee1e6;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    background: #52b788;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    background-color: red;
+  }
+  #size {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    background: #cdb4db;
   }
 }/*# sourceMappingURL=style.css.map */
