@@ -23,7 +23,7 @@ body {
   transform: translateX(-50%);
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   .container {
     background-color: teal;
   }
